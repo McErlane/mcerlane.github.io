@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+      {% include analytics.html %}
     <title>{% if page.title %}{{ page.title | upcase }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
@@ -44,8 +45,6 @@
           {% include svg-icons.html %}
         </footer>
       </div>
-    </div>
-
-    {% include analytics.html %}
+    </div>    
   </body>
 </html>
